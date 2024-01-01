@@ -1,5 +1,6 @@
-# 💫 About Me:
-- 🔭 I’m currently working on [lox-rs](https://github.com/genuinebnt/lox-rs)<br><br>- 🌱 I’m currently working with **Rust on a compiler project**<br><br>- 💬 Ask me about **Rust, Python, C, Compilers, Cybersecurity, Snowflake**<br><br>- 📫 How to reach me **genuine.basilnt@gmail.com**
+# 💫 About Me: Hi, I am Genuine. I am a developer and I am passionate about computer science. I love developing systems and enjoy making compilers. I also love cybersecurity and occasionally like to play security CTFs during my freetime. I like to read and enjoy relaxing in nature. I like to write code and solve problems. 
+
+🔭 I’m currently working on [lox-rs](https://github.com/genuinebnt/lox-rs)<br><br>🌱 I’m currently working with **Rust on a compiler project**<br><br>💬 Ask me about **Rust, Python, C, Compilers, Cybersecurity, Snowflake**<br><br>📫 How to reach me **genuine.basilnt@gmail.com**
 
 
 ## 🌐 Socials:
@@ -14,9 +15,6 @@
 
 ## 🏆 GitHub Trophies
 ![](https://github-profile-trophy.vercel.app/?username=genuinebnt&theme=radical&no-frame=false&no-bg=true&margin-w=4)
-
-### ✍️ Random Dev Quote
-![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
 
 ### 🔝 Top Contributed Repo
 ![](https://github-contributor-stats.vercel.app/api?username=genuinebnt&limit=5&theme=radical&combine_all_yearly_contributions=true)
