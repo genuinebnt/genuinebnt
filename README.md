@@ -2,7 +2,7 @@
 
 Hi! I am Genuine. I am a developer and I am passionate about computer science. I love developing systems and enjoy making compilers. I also love cybersecurity and occasionally like to play security CTFs during my freetime. I like to read and enjoy relaxing in nature. I like to write code and solve problems. 
 
-🔭 I’m currently working on [lox-rs](https://github.com/genuinebnt/lox-rs)<br><br>🌱 I’m currently working with **Rust on a compiler project**<br><br>💬 Ask me about **Rust, Python, C, Compilers, Cybersecurity, Snowflake**<br><br>📫 How to reach me **genuine.basilnt@gmail.com**
+🔭 I’m currently working on [lox-rs](https://github.com/genuinebnt/lox-rs)<br><br>🌱 I’m currently working with **Rust on a compiler project**<br><br>💬 Ask me about **Rust, Python, C, Compilers, Cybersecurity, Snowflake**<br><br>📫 Reach me at  **genuine.basilnt@gmail.com**
 
 
 ## 🌐 Socials:
