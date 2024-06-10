@@ -15,7 +15,7 @@ I am a developer and I am passionate about computer science. I love developing s
 ![](https://github-readme-stats.vercel.app/api?username=genuinebnt&theme=radical&hide_border=false&include_all_commits=false&count_private=false&hide_title=true)
 
 ## GitHub Streaks
-![](https://github-readme-streak-stats.herokuapp.com/?user=genuinebnt&theme=radical&hide_border=false)<br/>
+![](https://github-readme-streak-stats.herokuapp.com/?user=genuinebnt&theme=radical&hide_border=false)
 
 ## Most Used Languages
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=genuinebnt&theme=radical&hide_border=false&include_all_commits=true&count_private=true&layout=compact&langs_count=8&hide_title=true)
