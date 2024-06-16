@@ -20,7 +20,7 @@ I am a developer and I am passionate about computer science. I love developing s
 ## Most Used Languages
 ![](https://github-readme-stats.vercel.app/api/top-langs/?username=genuinebnt&theme=radical&hide_border=false&include_all_commits=true&count_private=true&layout=compact&langs_count=8&hide_title=true)
 
-## WakaTime Stats
+## WakaTime Stats from June 10 2024
 ![](https://github-readme-stats.vercel.app/api/wakatime?username=genuinebnt&theme=radical&layout=compact&langs_count=8&hide_title=true)
 
 ## GitHub Trophies
