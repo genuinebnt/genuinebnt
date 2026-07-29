@@ -2,7 +2,7 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:16213e,100:1f3a5f&height=210&section=header&text=Genuine%20Basil&fontSize=52&fontColor=e6edf3&fontAlignY=36&desc=Rust%20%C2%B7%20Distributed%20Systems%20%C2%B7%20Database%20Internals&descAlignY=58&descSize=18&animation=fadeIn" width="100%"/>
 
-<img src="https://readme-typing-svg.demolab.com/?font=JetBrains+Mono&weight=500&size=20&pause=1200&color=FF9D5C&center=true&vCenter=true&width=600&height=40&lines=storage+engines;consensus+%26+replication;query+execution;the+layer+underneath+the+application" />
+<img src="https://readme-typing-svg.demolab.com/?font=JetBrains+Mono&weight=500&size=20&pause=1200&color=FF9D5C&center=true&vCenter=true&width=620&height=40&lines=storage+engines;consensus+%26+replication;query+execution;the+layer+underneath+the+application" />
 
 <br/>
 
@@ -11,44 +11,58 @@
 [![X](https://img.shields.io/badge/X-___genuine___-0d1117?style=for-the-badge&logo=x&logoColor=e6edf3&labelColor=0d1117)](https://twitter.com/___genuine___)
 [![Email](https://img.shields.io/badge/EMAIL-say_hi-0d1117?style=for-the-badge&logo=maildotru&logoColor=D14836&labelColor=0d1117)](mailto:genuine.basilnt@gmail.com)
 
+<br/>
+
+<table align="center">
+<tr>
+<td align="center" width="240"><sub><b>B U I L D I N G</b></sub><br/><code>a database engine</code></td>
+<td align="center" width="240"><sub><b>S O L V I N G</b></sub><br/><code>distributed systems</code></td>
+<td align="center" width="240"><sub><b>W R I T I N G</b></sub><br/><code>genuinebasil.dev</code></td>
+</tr>
+</table>
+
 </div>
 
-```
-BUILDING                     LEARNING                      WRITING
-distributed systems          CMU 15-445 / 15-721           genuinebasil.dev
-in Rust                      database internals            notes on what I break
-```
+<br/>
 
-## &nbsp;`~/` what I'm working on
+I build the layer underneath the application — storage engines, consensus protocols, job queues, request tracing. Deliberately close to database and distributed infrastructure: the way I understand how systems like Postgres, CockroachDB, and Snowflake work is by building smaller versions of the same problems myself.
 
-Deliberately close to database and distributed infrastructure — understanding how systems like Postgres, CockroachDB, and Snowflake actually work by building smaller versions of the same problems myself.
+<br/>
+
+## &nbsp;`~/` current work
 
 <table>
 <tr>
 <td width="50%" valign="top">
 
-### [db-labs](https://github.com/genuinebnt/db-labs) &nbsp;`Rust`
+### &nbsp;[db-labs](https://github.com/genuinebnt/db-labs)
 
-Database internals from scratch.
+<sub>`Rust` &nbsp;·&nbsp; storage & recovery</sub>
 
-An LSM-tree storage engine — write-ahead log, SSTables, bloom filters, leveled compaction — and a Raft-backed key-value store exercised under chaos testing.
+**A database, written from the disk up.**
 
-`storage` &nbsp;`WAL` &nbsp;`MVCC` &nbsp;`compaction`
+An LSM-tree storage engine — write-ahead log, SSTables, bloom filters, leveled compaction — plus a Raft-backed key-value store exercised under chaos testing. Buffer pool, page layout, and a query executor on top.
+
+<sub>`WAL` &nbsp;`MVCC` &nbsp;`B+ tree` &nbsp;`compaction` &nbsp;`recovery`</sub>
 
 </td>
 <td width="50%" valign="top">
 
-### [gossip-glomers](https://github.com/genuinebnt/gossip-glomers) &nbsp;`Rust`
+### &nbsp;[gossip-glomers](https://github.com/genuinebnt/gossip-glomers)
 
-Fly.io's distributed systems challenges.
+<sub>`Rust` &nbsp;·&nbsp; consensus & fault tolerance</sub>
 
-Solved and written up one at a time — broadcast, efficient replication, a grow-only counter, and totally-available transactions under network partition.
+**Distributed systems that survive the network.**
 
-`consensus` &nbsp;`replication` &nbsp;`partitions`
+Fly.io's challenge set, solved and written up one at a time — efficient broadcast under partition, a grow-only counter, a replicated log, and totally-available transactions.
+
+<sub>`Raft` &nbsp;`replication` &nbsp;`partitions` &nbsp;`linearizability`</sub>
 
 </td>
 </tr>
 </table>
+
+<br/>
 
 ## &nbsp;`~/` focus
 
@@ -61,33 +75,38 @@ systems craft        async runtimes, observability, backpressure
 security             bug bounty on Bugcrowd · reversing with IDA Pro & Ghidra
 ```
 
-Reading *Designing Data-Intensive Applications* and working through CMU 15-445/15-721 alongside the projects above.
+<br/>
 
 ## &nbsp;`~/` working set
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=rust&theme=dark" height="48"/> <img src="https://cdn.simpleicons.org/snowflake/29B5E8" height="34" alt="Snowflake"/> <img src="https://skillicons.dev/icons?i=python,postgres,redis,aws,gcp,linux,neovim,docker,kubernetes&theme=dark&perline=9" height="48"/>
+<img src="https://go-skill-icons.vercel.app/api/icons?i=rust,snowflake,python,postgres,redis,aws,gcp,linux,neovim,docker,kubernetes&theme=dark&perline=11" width="92%"/>
 
 </div>
 
 <br/>
 
+## &nbsp;`~/` activity
+
 <div align="center">
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=genuinebnt&bg_color=0d1117&color=e6edf3&line=ff9d5c&point=ffffff&area=true&area_color=1f3a5f&hide_border=true&custom_title=contribution%20activity&radius=8" width="100%"/>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=genuinebnt&bg_color=0d1117&color=e6edf3&line=ff9d5c&point=ffffff&area=true&area_color=1f3a5f&hide_border=true&custom_title=contribution%20activity&radius=10" width="100%"/>
 
-<br/>
+<br/><br/>
 
-<img height="170" src="https://github-stats-extended.vercel.app/api/top-langs/?username=genuinebnt&layout=compact&langs_count=6&theme=transparent&hide_border=true&title_color=ff9d5c&text_color=8b949e" />
+<img height="180" src="https://github-stats-extended.vercel.app/api/wakatime?username=genuinebnt&layout=compact&langs_count=6&range=all_time&theme=transparent&hide_border=true&title_color=ff9d5c&text_color=8b949e&custom_title=where%20the%20hours%20go" />
 &nbsp;&nbsp;
-<img height="170" src="https://streak-stats.demolab.com/?user=genuinebnt&theme=transparent&hide_border=true&ring=ff9d5c&fire=ff9d5c&currStreakLabel=e6edf3&sideLabels=8b949e&dates=8b949e" />
+<img height="180" src="https://streak-stats.demolab.com/?user=genuinebnt&theme=transparent&hide_border=true&ring=ff9d5c&fire=ff9d5c&currStreakLabel=e6edf3&sideLabels=8b949e&dates=8b949e" />
 
-</div>
-
-<div align="center">
 <br/>
+
+<sub>every hour tracked with WakaTime · most of them in Rust</sub>
+
+<br/><br/>
+
 <sub>always breaking something on purpose &nbsp;·&nbsp; <a href="https://genuinebasil.dev">genuinebasil.dev</a></sub>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1f3a5f,50:16213e,100:0d1117&height=100&section=footer" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:1f3a5f,50:16213e,100:0d1117&height=110&section=footer" width="100%"/>
+
 </div>
