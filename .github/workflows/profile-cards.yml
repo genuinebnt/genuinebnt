@@ -107,5 +107,7 @@ jobs:
           plugin_wakatime: yes
           plugin_wakatime_token: ${{ secrets.WAKATIME_TOKEN }}
           plugin_wakatime_days: 365
-          plugin_wakatime_sections: time, languages, editors
+          # The -graphs variants are what draw the bars; without them the card is
+          # a flat list of sentences. projects is omitted deliberately.
+          plugin_wakatime_sections: time, languages, languages-graphs, editors, editors-graphs
           extras_css: ${{ env.CARD_CSS }}
