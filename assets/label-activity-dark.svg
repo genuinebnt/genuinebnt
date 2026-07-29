@@ -17,6 +17,7 @@
 .pill { fill: #13161b; stroke: #232830; stroke-width: 1; }
 .pilltext { font: 400 11px ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace; fill: #6b7280; }
 .pillstrong { font: 500 11px ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace; fill: #e2e6ee; }
+.glyph { fill: #6b7280; }
 </style>
 <text class="seclabel" x="0" y="44">ACTIVITY</text><line class="rule" x1="0" y1="49" x2="880" y2="49"/>
 </svg>

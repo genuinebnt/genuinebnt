@@ -47,14 +47,6 @@
 </picture>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/genuinebnt/genuinebnt/master/assets/label-stack-dark.svg"/>
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/genuinebnt/genuinebnt/master/assets/label-stack-light.svg"/>
-  <img alt="working set" src="https://raw.githubusercontent.com/genuinebnt/genuinebnt/master/assets/label-stack-dark.svg" width="100%"/>
-</picture>
-
-<img src="https://go-skill-icons.vercel.app/api/icons?i=rust,snowflake,python,postgres,redis,aws,gcp,linux,neovim,docker,kubernetes&theme=dark&perline=11" width="88%"/>
-
-<picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/genuinebnt/genuinebnt/master/assets/label-activity-dark.svg"/>
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/genuinebnt/genuinebnt/master/assets/label-activity-light.svg"/>
   <img alt="activity" src="https://raw.githubusercontent.com/genuinebnt/genuinebnt/master/assets/label-activity-dark.svg" width="100%"/>
@@ -74,8 +66,10 @@
 
 <sub>every hour tracked with WakaTime since June 2024 · most of them in Rust</sub>
 
-<br/>
-
-<sub>always breaking something on purpose &nbsp;·&nbsp; <a href="https://genuinebasil.dev">genuinebasil.dev</a></sub>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/genuinebnt/genuinebnt/master/assets/footer-dark.svg"/>
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/genuinebnt/genuinebnt/master/assets/footer-light.svg"/>
+  <a href="https://genuinebasil.dev"><img alt="always breaking something on purpose — genuinebasil.dev" src="https://raw.githubusercontent.com/genuinebnt/genuinebnt/master/assets/footer-dark.svg" width="100%"/></a>
+</picture>
 
 </div>
