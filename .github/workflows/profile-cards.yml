@@ -22,6 +22,13 @@ on:
 permissions:
   contents: write
 
+# Two runs must never overlap: the metrics steps commit through the GitHub API,
+# so a run that starts before an earlier one finishes checks out a SHA that is
+# already stale by the time it tries to push.
+concurrency:
+  group: profile-cards
+  cancel-in-progress: false
+
 env:
   # metrics renders light-themed by default: near-black text on an implicit white
   # page, and a GitHub-green calendar. Both read as a bright rectangle dropped
@@ -63,6 +70,12 @@ jobs:
 
           # Keeping yesterday's committed graph beats replacing it with an error.
           echo "::warning::activity graph unavailable, keeping the existing copy"
+
+      # The previous run's metrics steps commit through the API, so master can
+      # already be ahead of this checkout. Rebasing onto it first is what keeps
+      # the push below from being rejected as non-fast-forward.
+      - name: sync with commits made outside this checkout
+        run: git pull --rebase --autostash origin master
 
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
