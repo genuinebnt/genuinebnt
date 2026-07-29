@@ -2,7 +2,7 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d0f12,50:13161b,100:1a1e25&height=210&section=header&text=Genuine%20Basil&fontSize=52&fontColor=e2e6ee&fontAlignY=36&desc=Rust%20%C2%B7%20Distributed%20Systems%20%C2%B7%20Database%20Internals&descAlignY=58&descSize=18&animation=fadeIn" width="100%"/>
 
-<img src="https://readme-typing-svg.demolab.com/?font=JetBrains+Mono&weight=500&size=20&pause=1200&color=00d4a4&center=true&vCenter=true&width=620&height=40&lines=storage+engines;consensus+%26+replication;query+execution;the+layer+underneath+the+application" />
+<img src="https://readme-typing-svg.demolab.com/?font=IBM+Plex+Mono&weight=500&size=20&pause=1200&color=00d4a4&center=true&vCenter=true&width=620&height=40&lines=storage+engines;consensus+%26+replication;query+execution;the+layer+underneath+the+application" />
 
 <br/>
 
