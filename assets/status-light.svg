@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="880" height="64" viewBox="0 0 880 64" role="img" aria-label="current status">
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="62" viewBox="0 0 880 62" role="img" aria-label="current status">
 <style>
 .card { fill: #ffffff; stroke: #e4e8ee; stroke-width: 1; }
 .acc-edge { fill: #008f6f; }
@@ -19,18 +19,18 @@
 .pillstrong { font: 500 11px ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace; fill: #1a1e25; }
 </style>
 <g transform="translate(0.0,0)">
-<rect class="card" x="0.5" y="0.5" width="285.7" height="63" rx="6"/>
-<text class="eyebrow" x="16" y="26">BUILDING</text>
-<text class="name" x="16" y="48">a database engine</text>
+<rect class="card" x="0.5" y="0.5" width="285.7" height="61" rx="6"/>
+<text class="eyebrow" x="16" y="24">BUILDING</text>
+<text class="name" x="16" y="46">a database engine</text>
 </g>
 <g transform="translate(296.7,0)">
-<rect class="card" x="0.5" y="0.5" width="285.7" height="63" rx="6"/>
-<text class="eyebrow" x="16" y="26">SOLVING</text>
-<text class="name" x="16" y="48">distributed systems</text>
+<rect class="card" x="0.5" y="0.5" width="285.7" height="61" rx="6"/>
+<text class="eyebrow" x="16" y="24">SOLVING</text>
+<text class="name" x="16" y="46">distributed systems</text>
 </g>
 <g transform="translate(593.3,0)">
-<rect class="card" x="0.5" y="0.5" width="285.7" height="63" rx="6"/>
-<text class="eyebrow" x="16" y="26">WRITING</text>
-<text class="name" x="16" y="48">genuinebasil.dev</text>
+<rect class="card" x="0.5" y="0.5" width="285.7" height="61" rx="6"/>
+<text class="eyebrow" x="16" y="24">WRITING</text>
+<text class="name" x="16" y="46">genuinebasil.dev</text>
 </g>
 </svg>

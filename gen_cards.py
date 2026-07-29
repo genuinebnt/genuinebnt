@@ -41,6 +41,9 @@ SANS = "-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, 
 
 W = 880
 RADIUS = 6
+# .section-label's own margins, so stacked section images inherit the site's
+# vertical rhythm instead of butting straight up against each other.
+LABEL_TOP, LABEL_GAP = 34, 16
 
 
 def wrap(text, width_px, size, mono=False):
@@ -89,10 +92,14 @@ def styles(t, extra=""):
 {extra}</style>"""
 
 
-def section_label(text, y, width=W):
-    """.section-label + the hairline the site pairs it with."""
-    return (f'<text class="seclabel" x="0" y="{y}">{escape(text.upper())}</text>'
-            f'<line class="rule" x1="0" y1="{y + 12}" x2="{width}" y2="{y + 12}"/>')
+def section_label(text, width=W):
+    """.section-label + the hairline the site pairs it with, at its own margin."""
+    return (f'<text class="seclabel" x="0" y="{LABEL_TOP + 10}">{escape(text.upper())}</text>'
+            f'<line class="rule" x1="0" y1="{LABEL_TOP + 15}" x2="{width}" y2="{LABEL_TOP + 15}"/>')
+
+
+# First y a section's own content may occupy, below the label and its margin.
+CONTENT_TOP = LABEL_TOP + 15 + LABEL_GAP
 
 
 def divider5(t, y, width=W):
@@ -159,10 +166,10 @@ PROJECTS = [
 
 
 def work(t):
-    row_h, gap, top = 108, 10, 30
+    row_h, gap, top = 104, 10, CONTENT_TOP
     h = top + len(PROJECTS) * row_h + (len(PROJECTS) - 1) * gap
     p = [head(W, h, "current work"), styles(t),
-         section_label("current work", 10)]
+         section_label("current work")]
     y = top
     for name, topic, meta, desc, tags in PROJECTS:
         bar = TOPICS[topic]
@@ -171,13 +178,13 @@ def work(t):
         p.append(f'<clipPath id="c{name}"><rect x="0" y="0" width="{W}" height="{row_h}" rx="{RADIUS}"/></clipPath>')
         p.append(f'<rect class="card" x="0.5" y="0.5" width="{W - 1}" height="{row_h - 1}" rx="{RADIUS}"/>')
         p.append(f'<g clip-path="url(#c{name})"><rect x="0" y="0" width="3" height="{row_h}" fill="{bar}"/></g>')
-        p.append(f'<text class="name" x="18" y="26">{escape(name)}</text>')
-        p.append(f'<text class="chiptext" x="{18 + len(name) * 8 + 14}" y="26">{escape(meta)}</text>')
-        ty = 48
+        p.append(f'<text class="name" x="18" y="24">{escape(name)}</text>')
+        p.append(f'<text class="chiptext" x="{18 + len(name) * 8 + 14}" y="24">{escape(meta)}</text>')
+        ty = 46
         for line in wrap(desc, W - 60, 12):
             p.append(f'<text class="desc" x="18" y="{ty}">{escape(line)}</text>')
             ty += 19
-        p.append(chips(tags, 18, row_h - 30, t))
+        p.append(chips(tags, 18, row_h - 31, t))
         p.append("</g>")
         y += row_h + gap
     p.append("</svg>")
@@ -195,11 +202,11 @@ FOCUS = [
 
 
 def focus(t):
-    cols, cw, ch, gap, top = 2, 435, 72, 10, 30
+    cols, cw, ch, gap, top = 2, 435, 68, 10, CONTENT_TOP
     rows = (len(FOCUS) + cols - 1) // cols
     h = top + rows * ch + (rows - 1) * gap
     p = [head(W, h, "focus areas"), styles(t),
-         section_label("focus", 10)]
+         section_label("focus")]
     for i, (title, desc) in enumerate(FOCUS):
         x = (i % cols) * (cw + gap)
         y = top + (i // cols) * (ch + gap)
@@ -208,8 +215,8 @@ def focus(t):
         p.append(f'<rect class="card" x="0.5" y="0.5" width="{cw - 1}" height="{ch - 1}" rx="{RADIUS}"/>')
         # .card's 2px accent left border — full height, not an inset marker.
         p.append(f'<g clip-path="url(#f{i})"><rect class="acc-edge" x="0" y="0" width="2" height="{ch}"/></g>')
-        p.append(f'<text class="cardtitle" x="16" y="28">{escape(title)}</text>')
-        dy = 48
+        p.append(f'<text class="cardtitle" x="16" y="27">{escape(title)}</text>')
+        dy = 47
         for line in wrap(desc, cw - 32, 12.5):
             p.append(f'<text class="cardbody" x="16" y="{dy}">{escape(line)}</text>')
             dy += 18
@@ -224,14 +231,14 @@ STATUS = [("BUILDING", "a database engine"), ("SOLVING", "distributed systems"),
 def status(t):
     cols, gap = 3, 10
     cw = (W - (cols - 1) * gap) / cols
-    h = 64
+    h = 62
     p = [head(W, h, "current status"), styles(t)]
     for i, (label, value) in enumerate(STATUS):
         x = i * (cw + gap)
         p.append(f'<g transform="translate({x:.1f},0)">')
         p.append(f'<rect class="card" x="0.5" y="0.5" width="{cw - 1:.1f}" height="{h - 1}" rx="{RADIUS}"/>')
-        p.append(f'<text class="eyebrow" x="16" y="26">{escape(label)}</text>')
-        p.append(f'<text class="name" x="16" y="48">{escape(value)}</text>')
+        p.append(f'<text class="eyebrow" x="16" y="24">{escape(label)}</text>')
+        p.append(f'<text class="name" x="16" y="46">{escape(value)}</text>')
         p.append("</g>")
     p.append("</svg>")
     return "\n".join(p)
@@ -240,7 +247,7 @@ def status(t):
 def label_only(text):
     """A standalone .section-label + rule, for sections whose body is not an SVG."""
     def build(t):
-        return "\n".join([head(W, 22, text), styles(t), section_label(text, 10), "</svg>"])
+        return "\n".join([head(W, CONTENT_TOP, text), styles(t), section_label(text), "</svg>"])
     return build
 
 

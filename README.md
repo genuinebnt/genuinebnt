@@ -36,11 +36,9 @@
   <img alt="Current work: db-labs, a database written from the disk up; gossip-glomers, distributed systems that survive the network." src="https://raw.githubusercontent.com/genuinebnt/genuinebnt/master/assets/work-dark.svg" width="100%"/>
 </picture>
 
-<sub>
-
-[**db-labs**](https://github.com/genuinebnt/db-labs) &nbsp;·&nbsp; [**gossip-glomers**](https://github.com/genuinebnt/gossip-glomers)
-
-</sub>
+[![db-labs](https://img.shields.io/badge/db--labs-1a1e25?style=for-the-badge&logo=github&logoColor=f0703c&labelColor=13161b)](https://github.com/genuinebnt/db-labs)
+&nbsp;
+[![gossip-glomers](https://img.shields.io/badge/gossip--glomers-1a1e25?style=for-the-badge&logo=github&logoColor=4a90e8&labelColor=13161b)](https://github.com/genuinebnt/gossip-glomers)
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/genuinebnt/genuinebnt/master/assets/focus-dark.svg"/>
