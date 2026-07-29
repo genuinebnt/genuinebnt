@@ -107,9 +107,13 @@ security             bug bounty on Bugcrowd · reversing with IDA Pro & Ghidra
 
 <br/><br/>
 
-<img height="220" src="https://raw.githubusercontent.com/genuinebnt/genuinebnt/master/assets/calendar.svg" alt="contribution calendar"/>
-&nbsp;&nbsp;
-<img height="220" src="https://raw.githubusercontent.com/genuinebnt/genuinebnt/master/assets/wakatime.svg" alt="coding time"/>
+<img src="https://raw.githubusercontent.com/genuinebnt/genuinebnt/master/assets/activity.svg" width="100%" alt="contribution activity"/>
+
+<br/><br/>
+
+<img height="240" src="https://raw.githubusercontent.com/genuinebnt/genuinebnt/master/assets/calendar.svg" alt="contribution calendar"/>
+&nbsp;&nbsp;&nbsp;
+<img height="240" src="https://raw.githubusercontent.com/genuinebnt/genuinebnt/master/assets/wakatime.svg" alt="coding time"/>
 
 <br/>
 

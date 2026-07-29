@@ -1,10 +1,12 @@
 name: profile cards
 
-# Generates the contribution calendar and coding-time cards and commits them to
-# assets/, so the README renders from files we own rather than from shared public
-# instances whose GitHub API quota is pooled across all their users. Those
-# instances answer 200 with the error drawn *inside* the SVG when the pool is
-# exhausted, which GitHub's camo proxy then caches for hours.
+# Generates the activity graph, contribution calendar and coding-time card and
+# commits them to assets/, so the README renders from files we own. The upstream
+# activity-graph instance shares its GitHub API token across every user embedding
+# it, and when that pool is exhausted it answers 200 with the error text drawn
+# *inside* the SVG, which camo then caches for hours. Fetching it here instead
+# means a bad response is caught and discarded once a day rather than pinned to
+# the profile.
 #
 # The contribution snake is not here — animation.yml already generates it and
 # pushes it to the output branch.
@@ -20,10 +22,55 @@ on:
 permissions:
   contents: write
 
+env:
+  # metrics renders light-themed by default: near-black text on an implicit white
+  # page, and a GitHub-green calendar. Both read as a bright rectangle dropped
+  # into a dark README. These override the palette to the README's own accent.
+  # The calendar squares are plain fill attributes with no class to hook, so they
+  # are matched on their literal colour — attribute selectors beat presentation
+  # attributes, which is what makes this work at all.
+  CARD_CSS: |
+    svg { color: #8b949e !important; }
+    h2, h3 { color: #ff9d5c !important; }
+    .field svg { fill: #8b949e !important; }
+
 jobs:
   generate:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
+
+      - name: activity graph
+        run: |
+          set -euo pipefail
+          mkdir -p assets
+          url="https://github-readme-activity-graph.vercel.app/graph?username=genuinebnt&bg_color=0d1117&color=e6edf3&line=ff9d5c&point=ffffff&area=true&area_color=1f3a5f&hide_border=true&custom_title=contribution%20activity&radius=10"
+
+          for attempt in 1 2 3 4 5; do
+            curl -sSfL "$url" -o graph.tmp || true
+
+            # The service reports failure inside a 200 response, so the status
+            # code proves nothing — the body has to be inspected.
+            if [ -s graph.tmp ] && ! grep -qiE 'failed|error' graph.tmp; then
+              mv graph.tmp assets/activity.svg
+              echo "activity graph updated on attempt $attempt"
+              exit 0
+            fi
+
+            echo "attempt $attempt returned an error render, retrying"
+            sleep $((attempt * 20))
+          done
+
+          # Keeping yesterday's committed graph beats replacing it with an error.
+          echo "::warning::activity graph unavailable, keeping the existing copy"
+
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: regenerate activity graph"
+          file_pattern: assets/activity.svg
+
+      # The metrics steps run after the commit above because they commit through
+      # the GitHub API, moving the remote head and leaving this checkout behind.
       - name: contribution calendar
         uses: lowlighter/metrics@v3.34
         with:
@@ -38,6 +85,13 @@ jobs:
           output_condition: data-changed
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
+          extras_css: |
+            ${{ env.CARD_CSS }}
+            [fill="#ebedf0"] { fill: #161b22 !important; }
+            [fill="#9be9a8"] { fill: #3d2a1a !important; }
+            [fill="#40c463"] { fill: #7a4f28 !important; }
+            [fill="#30a14e"] { fill: #c47a3a !important; }
+            [fill="#216e39"] { fill: #ff9d5c !important; }
 
       - name: coding time
         uses: lowlighter/metrics@v3.34
@@ -53,4 +107,5 @@ jobs:
           plugin_wakatime: yes
           plugin_wakatime_token: ${{ secrets.WAKATIME_TOKEN }}
           plugin_wakatime_days: 365
-          plugin_wakatime_sections: time, languages, projects, editors
+          plugin_wakatime_sections: time, languages, editors
+          extras_css: ${{ env.CARD_CSS }}
