@@ -122,6 +122,9 @@ jobs:
           plugin_wakatime_token: ${{ secrets.WAKATIME_TOKEN }}
           plugin_wakatime_days: 365
           # The -graphs variants are what draw the bars; without them the card is
-          # a flat list of sentences. projects is omitted deliberately.
-          plugin_wakatime_sections: time, languages, languages-graphs, editors, editors-graphs
+          # a flat list of sentences. projects and editors are both omitted: the
+          # editor split is Cursor 52 / VS Code 28, which says nothing about the
+          # work, while time and languages carry the actual signal — 1,097 hours
+          # tracked, 60% of it Rust.
+          plugin_wakatime_sections: time, languages, languages-graphs
           extras_css: ${{ env.CARD_CSS }}
