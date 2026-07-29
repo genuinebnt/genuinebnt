@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="268" viewBox="0 0 880 268" role="img" aria-label="Genuine Basil — Rust, distributed systems, database internals">
+<style>
+.card { fill: #ffffff; stroke: #e4e8ee; stroke-width: 1; }
+.acc-edge { fill: #008f6f; }
+.eyebrow { font: 500 11px ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace; fill: #008f6f; letter-spacing: 1.32px; }
+.seclabel { font: 400 10px ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace; fill: #9aa4b2; letter-spacing: 1.5px; }
+.rule { stroke: #e4e8ee; stroke-width: 1; }
+.h1 { font: 500 30px -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif; fill: #1a1e25; letter-spacing: -0.75px; }
+.h1acc { font: 500 30px -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif; fill: #008f6f; letter-spacing: -0.75px; }
+.lead { font: 400 15px -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif; fill: #5b6573; }
+.cardtitle { font: 500 14px ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace; fill: #008f6f; }
+.cardbody { font: 400 12.5px -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif; fill: #5b6573; }
+.name { font: 500 13px ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace; fill: #1a1e25; }
+.desc { font: 400 12px -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif; fill: #5b6573; }
+.chip { fill: #f0f2f5; stroke: #e4e8ee; stroke-width: 1; }
+.chiptext { font: 400 10px ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace; fill: #5b6573; }
+.pill { fill: #ffffff; stroke: #e4e8ee; stroke-width: 1; }
+.pilltext { font: 400 11px ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace; fill: #5b6573; }
+.pillstrong { font: 500 11px ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace; fill: #1a1e25; }
+</style>
+<text class="eyebrow" x="0" y="26">GENUINE BASIL · SYSTEMS ENGINEER</text>
+<text class="h1" x="0" y="66">I build the layer <tspan class="h1acc">underneath</tspan> the application.</text>
+<text class="lead" x="0" y="96">Storage engines, consensus protocols, job queues, request tracing. Deliberately</text>
+<text class="lead" x="0" y="122">close to database and distributed infrastructure: the way I understand how</text>
+<text class="lead" x="0" y="148">systems like Postgres, CockroachDB and Snowflake work is by building smaller</text>
+<text class="lead" x="0" y="174">versions of the same problems myself.</text>
+<rect class="pill" x="0" y="206" width="50" height="24" rx="12"/>
+<text class="pilltext" x="12" y="222">Rust</text>
+<rect class="pill" x="58.4" y="206" width="149" height="24" rx="12"/>
+<text class="pilltext" x="70.4" y="222">distributed systems</text>
+<rect class="pill" x="215.79999999999998" y="206" width="143" height="24" rx="12"/>
+<text class="pilltext" x="227.79999999999998" y="222">database internals</text>
+<rect class="pill" x="366.6" y="206" width="130" height="24" rx="12"/>
+<text class="pilltext" x="378.6" y="222">genuinebasil.dev</text>
+<g><clipPath id="d5"><rect x="0" y="244" width="880" height="3" rx="2"/></clipPath><g clip-path="url(#d5)"><rect x="0.0" y="244" width="176.0" height="3" fill="#c2740a"/><rect x="176.0" y="244" width="176.0" height="3" fill="#7c3aed"/><rect x="352.0" y="244" width="176.0" height="3" fill="#2563eb"/><rect x="528.0" y="244" width="176.0" height="3" fill="#008f6f"/><rect x="704.0" y="244" width="176.0" height="3" fill="#9aa4b2"/></g></g>
+</svg>

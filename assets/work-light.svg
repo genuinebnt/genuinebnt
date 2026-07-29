@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="256" viewBox="0 0 880 256" role="img" aria-label="current work">
+<style>
+.card { fill: #ffffff; stroke: #e4e8ee; stroke-width: 1; }
+.acc-edge { fill: #008f6f; }
+.eyebrow { font: 500 11px ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace; fill: #008f6f; letter-spacing: 1.32px; }
+.seclabel { font: 400 10px ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace; fill: #9aa4b2; letter-spacing: 1.5px; }
+.rule { stroke: #e4e8ee; stroke-width: 1; }
+.h1 { font: 500 30px -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif; fill: #1a1e25; letter-spacing: -0.75px; }
+.h1acc { font: 500 30px -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif; fill: #008f6f; letter-spacing: -0.75px; }
+.lead { font: 400 15px -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif; fill: #5b6573; }
+.cardtitle { font: 500 14px ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace; fill: #008f6f; }
+.cardbody { font: 400 12.5px -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif; fill: #5b6573; }
+.name { font: 500 13px ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace; fill: #1a1e25; }
+.desc { font: 400 12px -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif; fill: #5b6573; }
+.chip { fill: #f0f2f5; stroke: #e4e8ee; stroke-width: 1; }
+.chiptext { font: 400 10px ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace; fill: #5b6573; }
+.pill { fill: #ffffff; stroke: #e4e8ee; stroke-width: 1; }
+.pilltext { font: 400 11px ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace; fill: #5b6573; }
+.pillstrong { font: 500 11px ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace; fill: #1a1e25; }
+</style>
+<text class="seclabel" x="0" y="10">CURRENT WORK</text><line class="rule" x1="0" y1="22" x2="880" y2="22"/>
+<g transform="translate(0,30)">
+<clipPath id="cdb-labs"><rect x="0" y="0" width="880" height="108" rx="6"/></clipPath>
+<rect class="card" x="0.5" y="0.5" width="879" height="107" rx="6"/>
+<g clip-path="url(#cdb-labs)"><rect x="0" y="0" width="3" height="108" fill="#f0703c"/></g>
+<text class="name" x="18" y="26">db-labs</text>
+<text class="chiptext" x="88" y="26">Rust · storage &amp; recovery</text>
+<text class="desc" x="18" y="48">A database, written from the disk up. An LSM-tree storage engine — write-ahead log, SSTables, bloom filters, leveled compaction —</text>
+<text class="desc" x="18" y="67">plus a Raft-backed key-value store exercised under chaos testing.</text>
+<rect class="chip" x="18" y="78" width="34" height="17" rx="8.5"/><text class="chiptext" x="26" y="90">WAL</text><rect class="chip" x="57" y="78" width="40" height="17" rx="8.5"/><text class="chiptext" x="65" y="90">MVCC</text><rect class="chip" x="102" y="78" width="58" height="17" rx="8.5"/><text class="chiptext" x="110" y="90">B+ tree</text><rect class="chip" x="165" y="78" width="76" height="17" rx="8.5"/><text class="chiptext" x="173" y="90">compaction</text><rect class="chip" x="246" y="78" width="64" height="17" rx="8.5"/><text class="chiptext" x="254" y="90">recovery</text>
+</g>
+<g transform="translate(0,148)">
+<clipPath id="cgossip-glomers"><rect x="0" y="0" width="880" height="108" rx="6"/></clipPath>
+<rect class="card" x="0.5" y="0.5" width="879" height="107" rx="6"/>
+<g clip-path="url(#cgossip-glomers)"><rect x="0" y="0" width="3" height="108" fill="#4a90e8"/></g>
+<text class="name" x="18" y="26">gossip-glomers</text>
+<text class="chiptext" x="144" y="26">Rust · consensus &amp; fault tolerance</text>
+<text class="desc" x="18" y="48">Distributed systems that survive the network. Fly.io&#x27;s challenge set, solved and written up one at a time — efficient broadcast</text>
+<text class="desc" x="18" y="67">under partition, a grow-only counter, a replicated log.</text>
+<rect class="chip" x="18" y="78" width="40" height="17" rx="8.5"/><text class="chiptext" x="26" y="90">Raft</text><rect class="chip" x="63" y="78" width="82" height="17" rx="8.5"/><text class="chiptext" x="71" y="90">replication</text><rect class="chip" x="150" y="78" width="76" height="17" rx="8.5"/><text class="chiptext" x="158" y="90">partitions</text><rect class="chip" x="231" y="78" width="106" height="17" rx="8.5"/><text class="chiptext" x="239" y="90">linearizability</text>
+</g>
+</svg>

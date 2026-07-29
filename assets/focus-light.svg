@@ -1,44 +1,64 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="878" height="262" viewBox="0 0 878 262" role="img" aria-label="focus areas">
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="266" viewBox="0 0 880 266" role="img" aria-label="focus areas">
 <style>
 .card { fill: #ffffff; stroke: #e4e8ee; stroke-width: 1; }
-.edge { fill: #008f6f; }
-.title { font: 500 13px ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace; fill: #1a1e25; }
-.desc  { font: 400 11.5px ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace; fill: #5b6573; }
+.acc-edge { fill: #008f6f; }
+.eyebrow { font: 500 11px ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace; fill: #008f6f; letter-spacing: 1.32px; }
+.seclabel { font: 400 10px ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace; fill: #9aa4b2; letter-spacing: 1.5px; }
+.rule { stroke: #e4e8ee; stroke-width: 1; }
+.h1 { font: 500 30px -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif; fill: #1a1e25; letter-spacing: -0.75px; }
+.h1acc { font: 500 30px -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif; fill: #008f6f; letter-spacing: -0.75px; }
+.lead { font: 400 15px -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif; fill: #5b6573; }
+.cardtitle { font: 500 14px ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace; fill: #008f6f; }
+.cardbody { font: 400 12.5px -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif; fill: #5b6573; }
+.name { font: 500 13px ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace; fill: #1a1e25; }
+.desc { font: 400 12px -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif; fill: #5b6573; }
+.chip { fill: #f0f2f5; stroke: #e4e8ee; stroke-width: 1; }
+.chiptext { font: 400 10px ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace; fill: #5b6573; }
+.pill { fill: #ffffff; stroke: #e4e8ee; stroke-width: 1; }
+.pilltext { font: 400 11px ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace; fill: #5b6573; }
+.pillstrong { font: 500 11px ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace; fill: #1a1e25; }
 </style>
-<g transform="translate(0,0)">
-<rect class="card" x="0.5" y="0.5" width="431" height="77" rx="6"/>
-<rect class="edge" x="1" y="25.0" width="2" height="28" rx="1"/>
-<text class="title" x="14" y="26">storage engines</text>
-<text class="desc" x="14" y="48">LSM trees, B+ trees, WAL, MVCC, compaction</text>
+<text class="seclabel" x="0" y="10">FOCUS</text><line class="rule" x1="0" y1="22" x2="880" y2="22"/>
+<g transform="translate(0,30)">
+<clipPath id="f0"><rect x="0" y="0" width="435" height="72" rx="6"/></clipPath>
+<rect class="card" x="0.5" y="0.5" width="434" height="71" rx="6"/>
+<g clip-path="url(#f0)"><rect class="acc-edge" x="0" y="0" width="2" height="72"/></g>
+<text class="cardtitle" x="16" y="28">storage engines</text>
+<text class="cardbody" x="16" y="48">LSM trees, B+ trees, WAL, MVCC, compaction</text>
 </g>
-<g transform="translate(446,0)">
-<rect class="card" x="0.5" y="0.5" width="431" height="77" rx="6"/>
-<rect class="edge" x="1" y="25.0" width="2" height="28" rx="1"/>
-<text class="title" x="14" y="26">consensus</text>
-<text class="desc" x="14" y="48">Raft, replication, partition tolerance</text>
+<g transform="translate(445,30)">
+<clipPath id="f1"><rect x="0" y="0" width="435" height="72" rx="6"/></clipPath>
+<rect class="card" x="0.5" y="0.5" width="434" height="71" rx="6"/>
+<g clip-path="url(#f1)"><rect class="acc-edge" x="0" y="0" width="2" height="72"/></g>
+<text class="cardtitle" x="16" y="28">consensus</text>
+<text class="cardbody" x="16" y="48">Raft, replication, partition tolerance</text>
 </g>
-<g transform="translate(0,92)">
-<rect class="card" x="0.5" y="0.5" width="431" height="77" rx="6"/>
-<rect class="edge" x="1" y="25.0" width="2" height="28" rx="1"/>
-<text class="title" x="14" y="26">query processing</text>
-<text class="desc" x="14" y="48">planning, execution, columnar &amp; vectorized</text>
+<g transform="translate(0,112)">
+<clipPath id="f2"><rect x="0" y="0" width="435" height="72" rx="6"/></clipPath>
+<rect class="card" x="0.5" y="0.5" width="434" height="71" rx="6"/>
+<g clip-path="url(#f2)"><rect class="acc-edge" x="0" y="0" width="2" height="72"/></g>
+<text class="cardtitle" x="16" y="28">query processing</text>
+<text class="cardbody" x="16" y="48">planning, execution, columnar &amp; vectorized</text>
 </g>
-<g transform="translate(446,92)">
-<rect class="card" x="0.5" y="0.5" width="431" height="77" rx="6"/>
-<rect class="edge" x="1" y="25.0" width="2" height="28" rx="1"/>
-<text class="title" x="14" y="26">data platforms</text>
-<text class="desc" x="14" y="48">warehouse internals, pipelines, cloud-native OLAP</text>
+<g transform="translate(445,112)">
+<clipPath id="f3"><rect x="0" y="0" width="435" height="72" rx="6"/></clipPath>
+<rect class="card" x="0.5" y="0.5" width="434" height="71" rx="6"/>
+<g clip-path="url(#f3)"><rect class="acc-edge" x="0" y="0" width="2" height="72"/></g>
+<text class="cardtitle" x="16" y="28">data platforms</text>
+<text class="cardbody" x="16" y="48">warehouse internals, pipelines, cloud-native OLAP</text>
 </g>
-<g transform="translate(0,184)">
-<rect class="card" x="0.5" y="0.5" width="431" height="77" rx="6"/>
-<rect class="edge" x="1" y="25.0" width="2" height="28" rx="1"/>
-<text class="title" x="14" y="26">systems craft</text>
-<text class="desc" x="14" y="48">async runtimes, observability, backpressure</text>
+<g transform="translate(0,194)">
+<clipPath id="f4"><rect x="0" y="0" width="435" height="72" rx="6"/></clipPath>
+<rect class="card" x="0.5" y="0.5" width="434" height="71" rx="6"/>
+<g clip-path="url(#f4)"><rect class="acc-edge" x="0" y="0" width="2" height="72"/></g>
+<text class="cardtitle" x="16" y="28">systems craft</text>
+<text class="cardbody" x="16" y="48">async runtimes, observability, backpressure</text>
 </g>
-<g transform="translate(446,184)">
-<rect class="card" x="0.5" y="0.5" width="431" height="77" rx="6"/>
-<rect class="edge" x="1" y="25.0" width="2" height="28" rx="1"/>
-<text class="title" x="14" y="26">security</text>
-<text class="desc" x="14" y="48">bug bounty on Bugcrowd, reversing with IDA Pro &amp; Ghidra</text>
+<g transform="translate(445,194)">
+<clipPath id="f5"><rect x="0" y="0" width="435" height="72" rx="6"/></clipPath>
+<rect class="card" x="0.5" y="0.5" width="434" height="71" rx="6"/>
+<g clip-path="url(#f5)"><rect class="acc-edge" x="0" y="0" width="2" height="72"/></g>
+<text class="cardtitle" x="16" y="28">security</text>
+<text class="cardbody" x="16" y="48">bug bounty on Bugcrowd, reversing with IDA Pro &amp; Ghidra</text>
 </g>
 </svg>

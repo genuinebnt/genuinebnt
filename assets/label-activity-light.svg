@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="22" viewBox="0 0 880 22" role="img" aria-label="activity">
+<style>
+.card { fill: #ffffff; stroke: #e4e8ee; stroke-width: 1; }
+.acc-edge { fill: #008f6f; }
+.eyebrow { font: 500 11px ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace; fill: #008f6f; letter-spacing: 1.32px; }
+.seclabel { font: 400 10px ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace; fill: #9aa4b2; letter-spacing: 1.5px; }
+.rule { stroke: #e4e8ee; stroke-width: 1; }
+.h1 { font: 500 30px -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif; fill: #1a1e25; letter-spacing: -0.75px; }
+.h1acc { font: 500 30px -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif; fill: #008f6f; letter-spacing: -0.75px; }
+.lead { font: 400 15px -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif; fill: #5b6573; }
+.cardtitle { font: 500 14px ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace; fill: #008f6f; }
+.cardbody { font: 400 12.5px -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif; fill: #5b6573; }
+.name { font: 500 13px ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace; fill: #1a1e25; }
+.desc { font: 400 12px -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif; fill: #5b6573; }
+.chip { fill: #f0f2f5; stroke: #e4e8ee; stroke-width: 1; }
+.chiptext { font: 400 10px ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace; fill: #5b6573; }
+.pill { fill: #ffffff; stroke: #e4e8ee; stroke-width: 1; }
+.pilltext { font: 400 11px ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace; fill: #5b6573; }
+.pillstrong { font: 500 11px ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace; fill: #1a1e25; }
+</style>
+<text class="seclabel" x="0" y="10">ACTIVITY</text><line class="rule" x1="0" y1="22" x2="880" y2="22"/>
+</svg>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="64" viewBox="0 0 880 64" role="img" aria-label="current status">
+<style>
+.card { fill: #13161b; stroke: #232830; stroke-width: 1; }
+.acc-edge { fill: #00d4a4; }
+.eyebrow { font: 500 11px ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace; fill: #00d4a4; letter-spacing: 1.32px; }
+.seclabel { font: 400 10px ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace; fill: #3a4050; letter-spacing: 1.5px; }
+.rule { stroke: #232830; stroke-width: 1; }
+.h1 { font: 500 30px -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif; fill: #e2e6ee; letter-spacing: -0.75px; }
+.h1acc { font: 500 30px -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif; fill: #00d4a4; letter-spacing: -0.75px; }
+.lead { font: 400 15px -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif; fill: #6b7280; }
+.cardtitle { font: 500 14px ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace; fill: #00d4a4; }
+.cardbody { font: 400 12.5px -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif; fill: #6b7280; }
+.name { font: 500 13px ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace; fill: #e2e6ee; }
+.desc { font: 400 12px -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif; fill: #6b7280; }
+.chip { fill: #1a1e25; stroke: #232830; stroke-width: 1; }
+.chiptext { font: 400 10px ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace; fill: #6b7280; }
+.pill { fill: #13161b; stroke: #232830; stroke-width: 1; }
+.pilltext { font: 400 11px ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace; fill: #6b7280; }
+.pillstrong { font: 500 11px ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace; fill: #e2e6ee; }
+</style>
+<g transform="translate(0.0,0)">
+<rect class="card" x="0.5" y="0.5" width="285.7" height="63" rx="6"/>
+<text class="eyebrow" x="16" y="26">BUILDING</text>
+<text class="name" x="16" y="48">a database engine</text>
+</g>
+<g transform="translate(296.7,0)">
+<rect class="card" x="0.5" y="0.5" width="285.7" height="63" rx="6"/>
+<text class="eyebrow" x="16" y="26">SOLVING</text>
+<text class="name" x="16" y="48">distributed systems</text>
+</g>
+<g transform="translate(593.3,0)">
+<rect class="card" x="0.5" y="0.5" width="285.7" height="63" rx="6"/>
+<text class="eyebrow" x="16" y="26">WRITING</text>
+<text class="name" x="16" y="48">genuinebasil.dev</text>
+</g>
+</svg>
