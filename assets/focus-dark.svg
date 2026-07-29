@@ -23,43 +23,43 @@
 <g transform="translate(0,65)">
 <clipPath id="f0"><rect x="0" y="0" width="435" height="68" rx="6"/></clipPath>
 <rect class="card" x="0.5" y="0.5" width="434" height="67" rx="6"/>
-<g clip-path="url(#f0)"><rect class="acc-edge" x="0" y="0" width="2" height="68"/></g>
-<text class="cardtitle" x="16" y="27">storage engines</text>
+<g clip-path="url(#f0)"><rect x="0" y="0" width="2" height="68" fill="#9270e0"/></g>
+<text class="cardtitle" x="16" y="27" style="fill:#9270e0">storage engines</text>
 <text class="cardbody" x="16" y="47">LSM trees, B+ trees, WAL, MVCC, compaction</text>
 </g>
 <g transform="translate(445,65)">
 <clipPath id="f1"><rect x="0" y="0" width="435" height="68" rx="6"/></clipPath>
 <rect class="card" x="0.5" y="0.5" width="434" height="67" rx="6"/>
-<g clip-path="url(#f1)"><rect class="acc-edge" x="0" y="0" width="2" height="68"/></g>
-<text class="cardtitle" x="16" y="27">consensus</text>
+<g clip-path="url(#f1)"><rect x="0" y="0" width="2" height="68" fill="#4a90e8"/></g>
+<text class="cardtitle" x="16" y="27" style="fill:#4a90e8">consensus</text>
 <text class="cardbody" x="16" y="47">Raft, replication, partition tolerance</text>
 </g>
 <g transform="translate(0,143)">
 <clipPath id="f2"><rect x="0" y="0" width="435" height="68" rx="6"/></clipPath>
 <rect class="card" x="0.5" y="0.5" width="434" height="67" rx="6"/>
-<g clip-path="url(#f2)"><rect class="acc-edge" x="0" y="0" width="2" height="68"/></g>
-<text class="cardtitle" x="16" y="27">query processing</text>
+<g clip-path="url(#f2)"><rect x="0" y="0" width="2" height="68" fill="#e0a92e"/></g>
+<text class="cardtitle" x="16" y="27" style="fill:#e0a92e">query processing</text>
 <text class="cardbody" x="16" y="47">planning, execution, columnar &amp; vectorized</text>
 </g>
 <g transform="translate(445,143)">
 <clipPath id="f3"><rect x="0" y="0" width="435" height="68" rx="6"/></clipPath>
 <rect class="card" x="0.5" y="0.5" width="434" height="67" rx="6"/>
-<g clip-path="url(#f3)"><rect class="acc-edge" x="0" y="0" width="2" height="68"/></g>
-<text class="cardtitle" x="16" y="27">data platforms</text>
+<g clip-path="url(#f3)"><rect x="0" y="0" width="2" height="68" fill="#d957d4"/></g>
+<text class="cardtitle" x="16" y="27" style="fill:#d957d4">data platforms</text>
 <text class="cardbody" x="16" y="47">warehouse internals, pipelines, cloud-native OLAP</text>
 </g>
 <g transform="translate(0,221)">
 <clipPath id="f4"><rect x="0" y="0" width="435" height="68" rx="6"/></clipPath>
 <rect class="card" x="0.5" y="0.5" width="434" height="67" rx="6"/>
-<g clip-path="url(#f4)"><rect class="acc-edge" x="0" y="0" width="2" height="68"/></g>
-<text class="cardtitle" x="16" y="27">systems craft</text>
+<g clip-path="url(#f4)"><rect x="0" y="0" width="2" height="68" fill="#f0703c"/></g>
+<text class="cardtitle" x="16" y="27" style="fill:#f0703c">systems craft</text>
 <text class="cardbody" x="16" y="47">async runtimes, observability, backpressure</text>
 </g>
 <g transform="translate(445,221)">
 <clipPath id="f5"><rect x="0" y="0" width="435" height="68" rx="6"/></clipPath>
 <rect class="card" x="0.5" y="0.5" width="434" height="67" rx="6"/>
-<g clip-path="url(#f5)"><rect class="acc-edge" x="0" y="0" width="2" height="68"/></g>
-<text class="cardtitle" x="16" y="27">security</text>
+<g clip-path="url(#f5)"><rect x="0" y="0" width="2" height="68" fill="#00c896"/></g>
+<text class="cardtitle" x="16" y="27" style="fill:#00c896">security</text>
 <text class="cardbody" x="16" y="47">bug bounty on Bugcrowd, reversing with IDA Pro &amp; Ghidra</text>
 </g>
 </svg>

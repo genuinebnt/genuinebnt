@@ -34,7 +34,9 @@ THEMES = {
 
 # $topics — fixed hex, deliberately not theme-dependent (a topic's colour is its
 # own identity). See _tokens.scss:91 and _home.scss's .t-* rules.
-TOPICS = {"rust": "#f0703c", "distributed": "#4a90e8", "systems": "#9270e0"}
+TOPICS = {"infosec": "#00c896", "rust": "#f0703c", "distributed": "#4a90e8",
+          "performance": "#d957d4", "ctf": "#ef5350", "systems": "#9270e0",
+          "compilers": "#e0a92e"}
 
 # simple-icons paths, embedded so generation needs no network.
 # 24x24 viewBox. AWS is only in the npm package; the colour CDN 404s it.
@@ -217,12 +219,13 @@ def work(t):
 
 
 FOCUS = [
-    ("storage engines", "LSM trees, B+ trees, WAL, MVCC, compaction"),
-    ("consensus", "Raft, replication, partition tolerance"),
-    ("query processing", "planning, execution, columnar & vectorized"),
-    ("data platforms", "warehouse internals, pipelines, cloud-native OLAP"),
-    ("systems craft", "async runtimes, observability, backpressure"),
-    ("security", "bug bounty on Bugcrowd, reversing with IDA Pro & Ghidra"),
+    ("storage engines", "systems", "LSM trees, B+ trees, WAL, MVCC, compaction"),
+    ("consensus", "distributed", "Raft, replication, partition tolerance"),
+    # Query planners are compilers wearing a different hat.
+    ("query processing", "compilers", "planning, execution, columnar & vectorized"),
+    ("data platforms", "performance", "warehouse internals, pipelines, cloud-native OLAP"),
+    ("systems craft", "rust", "async runtimes, observability, backpressure"),
+    ("security", "infosec", "bug bounty on Bugcrowd, reversing with IDA Pro & Ghidra"),
 ]
 
 
@@ -232,15 +235,16 @@ def focus(t):
     h = top + rows * ch + (rows - 1) * gap
     p = [head(W, h, "focus areas"), styles(t),
          section_label("focus")]
-    for i, (title, desc) in enumerate(FOCUS):
+    for i, (title, topic, desc) in enumerate(FOCUS):
         x = (i % cols) * (cw + gap)
         y = top + (i // cols) * (ch + gap)
         p.append(f'<g transform="translate({x},{y})">')
         p.append(f'<clipPath id="f{i}"><rect x="0" y="0" width="{cw}" height="{ch}" rx="{RADIUS}"/></clipPath>')
         p.append(f'<rect class="card" x="0.5" y="0.5" width="{cw - 1}" height="{ch - 1}" rx="{RADIUS}"/>')
         # .card's 2px accent left border — full height, not an inset marker.
-        p.append(f'<g clip-path="url(#f{i})"><rect class="acc-edge" x="0" y="0" width="2" height="{ch}"/></g>')
-        p.append(f'<text class="cardtitle" x="16" y="27">{escape(title)}</text>')
+        p.append(f'<g clip-path="url(#f{i})">'
+                 f'<rect x="0" y="0" width="2" height="{ch}" fill="{TOPICS[topic]}"/></g>')
+        p.append(f'<text class="cardtitle" x="16" y="27" style="fill:{TOPICS[topic]}">{escape(title)}</text>')
         dy = 47
         for line in wrap(desc, cw - 32, 12.5):
             p.append(f'<text class="cardbody" x="16" y="{dy}">{escape(line)}</text>')
@@ -299,10 +303,10 @@ def stack(t):
 
 def footer(t):
     """.divider5 again as a closing rule, with the site's mono sign-off."""
-    h = 52
-    p = [head(W, h, "genuinebasil.dev"), styles(t), divider5(t, 0),
-         f'<text class="seclabel" x="0" y="30">ALWAYS BREAKING SOMETHING ON PURPOSE</text>',
-         f'<text class="pilltext" x="{W}" y="30" text-anchor="end">genuinebasil.dev</text>', "</svg>"]
+    h = 74
+    p = [head(W, h, "genuinebasil.dev"), styles(t), divider5(t, 22),
+         f'<text class="seclabel" x="0" y="52">ALWAYS BREAKING SOMETHING ON PURPOSE</text>',
+         f'<text class="pilltext" x="{W}" y="52" text-anchor="end">genuinebasil.dev</text>', "</svg>"]
     return "\n".join(p)
 
 
