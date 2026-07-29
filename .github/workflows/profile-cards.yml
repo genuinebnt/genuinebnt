@@ -35,11 +35,12 @@ env:
   # into a dark README. These override the palette to the README's own accent.
   # The calendar squares are plain fill attributes with no class to hook, so they
   # are matched on their literal colour — attribute selectors beat presentation
-  # attributes, which is what makes this work at all.
+  # attributes, which is what makes this work at all. Values come from the site's
+  # own theme tokens (frontend/styles/_tokens.scss, $themes.dark).
   CARD_CSS: |
-    svg { color: #8b949e !important; }
-    h2, h3 { color: #ff9d5c !important; }
-    .field svg { fill: #8b949e !important; }
+    svg { color: #6b7280 !important; }
+    h2, h3 { color: #00d4a4 !important; }
+    .field svg { fill: #6b7280 !important; }
 
 jobs:
   generate:
@@ -51,7 +52,7 @@ jobs:
         run: |
           set -euo pipefail
           mkdir -p assets
-          url="https://github-readme-activity-graph.vercel.app/graph?username=genuinebnt&bg_color=0d1117&color=e6edf3&line=ff9d5c&point=ffffff&area=true&area_color=1f3a5f&hide_border=true&custom_title=contribution%20activity&radius=10"
+          url="https://github-readme-activity-graph.vercel.app/graph?username=genuinebnt&bg_color=0d0f12&color=e2e6ee&line=00d4a4&point=e2e6ee&area=true&area_color=103a34&hide_border=true&custom_title=contribution%20activity&radius=10"
 
           for attempt in 1 2 3 4 5; do
             curl -sSfL "$url" -o graph.tmp || true
@@ -100,11 +101,11 @@ jobs:
           plugin_isocalendar_duration: full-year
           extras_css: |
             ${{ env.CARD_CSS }}
-            [fill="#ebedf0"] { fill: #161b22 !important; }
-            [fill="#9be9a8"] { fill: #3d2a1a !important; }
-            [fill="#40c463"] { fill: #7a4f28 !important; }
-            [fill="#30a14e"] { fill: #c47a3a !important; }
-            [fill="#216e39"] { fill: #ff9d5c !important; }
+            [fill="#ebedf0"] { fill: #13161b !important; }
+            [fill="#9be9a8"] { fill: #0d3b33 !important; }
+            [fill="#40c463"] { fill: #0e6b5b !important; }
+            [fill="#30a14e"] { fill: #00a582 !important; }
+            [fill="#216e39"] { fill: #00d4a4 !important; }
 
       - name: coding time
         uses: lowlighter/metrics@v3.34
