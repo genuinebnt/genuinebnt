@@ -1,0 +1,56 @@
+name: profile cards
+
+# Generates the contribution calendar and coding-time cards and commits them to
+# assets/, so the README renders from files we own rather than from shared public
+# instances whose GitHub API quota is pooled across all their users. Those
+# instances answer 200 with the error drawn *inside* the SVG when the pool is
+# exhausted, which GitHub's camo proxy then caches for hours.
+#
+# The contribution snake is not here — animation.yml already generates it and
+# pushes it to the output branch.
+
+on:
+  schedule:
+    - cron: "0 3 * * *"
+  workflow_dispatch:
+  push:
+    branches: [master]
+    paths: [.github/workflows/profile-cards.yml]
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: contribution calendar
+        uses: lowlighter/metrics@v3.34
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: genuinebnt
+          filename: assets/calendar.svg
+          base: ""
+          config_output: svg
+          config_timezone: UTC
+          committer_branch: master
+          committer_message: "chore: regenerate contribution calendar"
+          output_condition: data-changed
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
+
+      - name: coding time
+        uses: lowlighter/metrics@v3.34
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: genuinebnt
+          filename: assets/wakatime.svg
+          base: ""
+          config_output: svg
+          committer_branch: master
+          committer_message: "chore: regenerate coding time"
+          output_condition: data-changed
+          plugin_wakatime: yes
+          plugin_wakatime_token: ${{ secrets.WAKATIME_TOKEN }}
+          plugin_wakatime_days: 365
+          plugin_wakatime_sections: time, languages, projects, editors
