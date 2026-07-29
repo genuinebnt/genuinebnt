@@ -66,14 +66,21 @@ Fly.io's challenge set, solved and written up one at a time — efficient broadc
 
 ## &nbsp;`~/` focus
 
-```
-storage engines      LSM trees, B+ trees, WAL, MVCC, compaction
-consensus            Raft, replication, partition tolerance
-query processing     planning, execution, columnar & vectorized
-data platforms       warehouse internals, pipelines, cloud-native OLAP
-systems craft        async runtimes, observability, backpressure
-security             bug bounty on Bugcrowd · reversing with IDA Pro & Ghidra
-```
+<div align="center">
+
+<!--
+  Rendered as SVG because GitHub strips CSS from markdown: this is the only way
+  to reuse the editor's card recipe (surface fill, 1px border, --radius corners,
+  accent edge). Regenerate with gen_focus.py after editing the card list.
+-->
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/genuinebnt/genuinebnt/master/assets/focus-dark.svg"/>
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/genuinebnt/genuinebnt/master/assets/focus-light.svg"/>
+  <img alt="storage engines, consensus, query processing, data platforms, systems craft, security" src="https://raw.githubusercontent.com/genuinebnt/genuinebnt/master/assets/focus-dark.svg" width="100%"/>
+</picture>
+
+</div>
 
 <br/>
 

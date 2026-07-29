@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="878" height="262" viewBox="0 0 878 262" role="img" aria-label="focus areas">
+<style>
+.card { fill: #13161b; stroke: #232830; stroke-width: 1; }
+.edge { fill: #00d4a4; }
+.title { font: 500 13px ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace; fill: #e2e6ee; }
+.desc  { font: 400 11.5px ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace; fill: #6b7280; }
+</style>
+<g transform="translate(0,0)">
+<rect class="card" x="0.5" y="0.5" width="431" height="77" rx="6"/>
+<rect class="edge" x="1" y="25.0" width="2" height="28" rx="1"/>
+<text class="title" x="14" y="26">storage engines</text>
+<text class="desc" x="14" y="48">LSM trees, B+ trees, WAL, MVCC, compaction</text>
+</g>
+<g transform="translate(446,0)">
+<rect class="card" x="0.5" y="0.5" width="431" height="77" rx="6"/>
+<rect class="edge" x="1" y="25.0" width="2" height="28" rx="1"/>
+<text class="title" x="14" y="26">consensus</text>
+<text class="desc" x="14" y="48">Raft, replication, partition tolerance</text>
+</g>
+<g transform="translate(0,92)">
+<rect class="card" x="0.5" y="0.5" width="431" height="77" rx="6"/>
+<rect class="edge" x="1" y="25.0" width="2" height="28" rx="1"/>
+<text class="title" x="14" y="26">query processing</text>
+<text class="desc" x="14" y="48">planning, execution, columnar &amp; vectorized</text>
+</g>
+<g transform="translate(446,92)">
+<rect class="card" x="0.5" y="0.5" width="431" height="77" rx="6"/>
+<rect class="edge" x="1" y="25.0" width="2" height="28" rx="1"/>
+<text class="title" x="14" y="26">data platforms</text>
+<text class="desc" x="14" y="48">warehouse internals, pipelines, cloud-native OLAP</text>
+</g>
+<g transform="translate(0,184)">
+<rect class="card" x="0.5" y="0.5" width="431" height="77" rx="6"/>
+<rect class="edge" x="1" y="25.0" width="2" height="28" rx="1"/>
+<text class="title" x="14" y="26">systems craft</text>
+<text class="desc" x="14" y="48">async runtimes, observability, backpressure</text>
+</g>
+<g transform="translate(446,184)">
+<rect class="card" x="0.5" y="0.5" width="431" height="77" rx="6"/>
+<rect class="edge" x="1" y="25.0" width="2" height="28" rx="1"/>
+<text class="title" x="14" y="26">security</text>
+<text class="desc" x="14" y="48">bug bounty on Bugcrowd, reversing with IDA Pro &amp; Ghidra</text>
+</g>
+</svg>
