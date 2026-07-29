@@ -78,10 +78,18 @@ jobs:
       - name: sync with commits made outside this checkout
         run: git pull --rebase --autostash origin master
 
+      # GitHub's camo proxy caches by URL and ignores that the file underneath
+      # changed, so a regenerated card keeps serving the previous render for
+      # hours. Restamping the query string gives camo a URL it has never seen.
+      - name: restamp the card URLs so camo refetches them
+        run: |
+          set -euo pipefail
+          sed -i -E "s/(assets\/(activity|calendar|wakatime)\.svg)\?v=[0-9]+/\1?v=$(date -u +%Y%m%d)/g" README.md
+
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: regenerate activity graph"
-          file_pattern: assets/activity.svg
+          file_pattern: "assets/activity.svg README.md"
 
       # The metrics steps run after the commit above because they commit through
       # the GitHub API, moving the remote head and leaving this checkout behind.
