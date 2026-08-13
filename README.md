@@ -56,11 +56,11 @@
   <img alt="contribution snake" src="https://raw.githubusercontent.com/genuinebnt/genuinebnt/output/github-contribution-grid-snake.svg" width="100%"/>
 </picture>
 
-<img src="https://raw.githubusercontent.com/genuinebnt/genuinebnt/master/assets/activity.svg?v=20260812" width="100%" alt="contribution activity"/>
+<img src="https://raw.githubusercontent.com/genuinebnt/genuinebnt/master/assets/activity.svg?v=20260813" width="100%" alt="contribution activity"/>
 
-<img height="240" src="https://raw.githubusercontent.com/genuinebnt/genuinebnt/master/assets/calendar.svg?v=20260812" alt="contribution calendar"/>
+<img height="240" src="https://raw.githubusercontent.com/genuinebnt/genuinebnt/master/assets/calendar.svg?v=20260813" alt="contribution calendar"/>
 &nbsp;&nbsp;&nbsp;
-<img height="240" src="https://raw.githubusercontent.com/genuinebnt/genuinebnt/master/assets/wakatime.svg?v=20260812" alt="coding time"/>
+<img height="240" src="https://raw.githubusercontent.com/genuinebnt/genuinebnt/master/assets/wakatime.svg?v=20260813" alt="coding time"/>
 
 <sub>every hour tracked with WakaTime since June 2024 · most of them in Rust</sub>
 
